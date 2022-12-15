@@ -153,6 +153,18 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="database.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MainMenu.cpp" />
+    <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="SchoolMenu.cpp" />
+    <ClCompile Include="StudentMenu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Main.h" />
+    <ClInclude Include="MainMenu.h" />
+    <ClInclude Include="Menu.h" />
+    <ClInclude Include="SchoolMenu.h" />
+    <ClInclude Include="StudentMenu.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

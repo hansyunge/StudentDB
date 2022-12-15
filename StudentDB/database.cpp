@@ -1,6 +1,6 @@
-#include <stdlib.h>
-#include <iostream>
+/*
 
+#include "Main.h"
 #include "mysql_connection.h"
 #include <cppconn/driver.h>
 #include <cppconn/exception.h>
@@ -10,9 +10,9 @@ using namespace std;
 //for demonstration only. never save your password in the code!
 const string server = "localhost";
 const string username = "user";
-const string password = "user";
+const string password = "password";
 
-int main()
+int database()
 {
     sql::Driver* driver;
     sql::Connection* con;
@@ -32,7 +32,7 @@ int main()
     }
 
     //please create database "quickstartdb" ahead of time
-    con->setSchema("studentDB");
+    con->setSchema("test");
 
     stmt = con->createStatement();
     stmt->execute("DROP TABLE IF EXISTS inventory");
@@ -62,3 +62,5 @@ int main()
     system("pause");
     return 0;
 }
+
+*/
