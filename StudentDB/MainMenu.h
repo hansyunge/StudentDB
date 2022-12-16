@@ -24,8 +24,7 @@ public:
 
     string * getMainMenu() {
 
-        cout << "Size of x from MainMenu.h getMainMenu():  " << x << endl; // debug code
-        cout << "Main Menu choice: " << mainMenuChoices << endl;  // debug code
+        cout << "Main Menu: " << endl;
         return mainMenuChoices;
     }
     

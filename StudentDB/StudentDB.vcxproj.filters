@@ -13,42 +13,60 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Main">
+      <UniqueIdentifier>{f16ed4f4-52e2-4ffe-a240-1ace1ac531c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MainMenu">
+      <UniqueIdentifier>{03bea1e7-74ce-43b2-81b0-8a1585a33744}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Menu">
+      <UniqueIdentifier>{fbfa845f-b729-4e6c-92df-290ca09fd612}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SchoolMenu">
+      <UniqueIdentifier>{47cc6f39-1ae5-46a6-bf22-fb2a1dd8516a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="StudentMenu">
+      <UniqueIdentifier>{88a7eca1-3239-49b2-b03b-b1813fb2ecaf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Database">
+      <UniqueIdentifier>{aa8e6f60-5d30-414f-8f3f-a00a9a59f32f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="database.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Menu.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>Main</Filter>
     </ClCompile>
     <ClCompile Include="MainMenu.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>MainMenu</Filter>
     </ClCompile>
-    <ClCompile Include="StudentMenu.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Menu.cpp">
+      <Filter>Menu</Filter>
     </ClCompile>
     <ClCompile Include="SchoolMenu.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>SchoolMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="StudentMenu.cpp">
+      <Filter>StudentMenu</Filter>
+    </ClCompile>
+    <ClCompile Include="database.cpp">
+      <Filter>Database</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Menu.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="MainMenu.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="StudentMenu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="SchoolMenu.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Main.h">
-      <Filter>Header Files</Filter>
+      <Filter>Main</Filter>
+    </ClInclude>
+    <ClInclude Include="MainMenu.h">
+      <Filter>MainMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="Menu.h">
+      <Filter>Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="SchoolMenu.h">
+      <Filter>SchoolMenu</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

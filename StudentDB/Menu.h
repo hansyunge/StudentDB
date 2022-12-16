@@ -16,7 +16,7 @@ protected:
 
 public:
 
-    void createMenu(string *menuChoices);
+    void createMenu(string *menuChoices, int size);
     int obtainSelection();
     
 
