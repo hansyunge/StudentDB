@@ -13,7 +13,7 @@ private:
                                         " 5) Main Menu",};
 
 
-    int x = sizeof(studentMenuChoices);
+    int x = sizeof(studentMenuChoices) / (sizeof(studentMenuChoices[0]));
 
 public:
     StudentMenu() {
@@ -21,6 +21,7 @@ public:
     };
 
     string getStudentMenu() {
+        cout << "Student Menu: " << endl;
         return studentMenuChoices[getStudentMenuSize()];
     }
 

@@ -53,9 +53,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="StudentMenu.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Main.h">
       <Filter>Main</Filter>
     </ClInclude>
@@ -67,6 +64,9 @@
     </ClInclude>
     <ClInclude Include="SchoolMenu.h">
       <Filter>SchoolMenu</Filter>
+    </ClInclude>
+    <ClInclude Include="StudentMenu.h">
+      <Filter>StudentMenu</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

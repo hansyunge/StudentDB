@@ -15,7 +15,7 @@ void Menu::createMenu(string* menuChoices, int size) {
 
 
 		for (int i = 0; i < size; i++) {
-			cout << "#: " << i << " " << menuChoices[i] << endl;
+			cout << menuChoices[i] << endl;
 		}
 
 		cout << newMenu.menuTopBottomBars[1] << endl; // bottom menu bar

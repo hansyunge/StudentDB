@@ -10,7 +10,7 @@ class Menu
 {
 protected:
 
-    string menuTopBottomBars[2] = { "**********************************T", "**********************************B" };
+    string menuTopBottomBars[2] = { "**********************************", "**********************************" };
     int menuSelection = 0;
 
 
