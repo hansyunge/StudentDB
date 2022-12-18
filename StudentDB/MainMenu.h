@@ -7,6 +7,7 @@
 #include "Menu.h"
 #include <xkeycheck.h>
 
+class Menu;
 
 class MainMenu:public Menu
 {
