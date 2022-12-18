@@ -6,6 +6,8 @@
 #include <iostream>
 #include <string>
 #include "Menu.h"
+#include "SchoolMenu.h"
+#include "StudentMenu.h"
 
 class MainMenu :public Menu
 {

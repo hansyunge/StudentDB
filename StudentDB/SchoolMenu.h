@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _SCHOOL_MENU
+#define _SCHOOL_MENU
+
 #include "Menu.h"
 #include "Main.h"
 
@@ -15,21 +17,14 @@ private:
     int x = sizeof(*schoolMenuChoices) / (sizeof(schoolMenuChoices[0]));
 
 public:
-    SchoolMenu() {
+    SchoolMenu();
 
-    };
+    string* getSchoolMenu();
 
-    string getSchoolMenu() {
-        cout << "School Menu: " << endl;
-        return schoolMenuChoices[getSchoolMenuSize()];
-    }
+    int getSchoolMenuSize();
 
-    int getSchoolMenuSize() {
-
-        return x;
-    }
-
-
+    void initializeMenu();
 
 };
 
+#endif // !_SCHOOL_MENU

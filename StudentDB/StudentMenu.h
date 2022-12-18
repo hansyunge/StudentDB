@@ -1,4 +1,6 @@
-#pragma once
+#ifndef _STUDENT_MENU
+#define _STUDENT_MENU
+
 #include "Menu.h"
 
 using namespace std;
@@ -6,7 +8,7 @@ using namespace std;
 class StudentMenu:public Menu
 {
 private:
-    string studentMenuChoices[5] = { "1) List All Students  ",
+    string studentMenuChoices[5] = { " 1) List All Students  ",
                                         " 2) Search for student ",
                                         " 3) Add Student",
                                         " 4) Delete Student",
@@ -16,20 +18,14 @@ private:
     int x = sizeof(studentMenuChoices) / (sizeof(studentMenuChoices[0]));
 
 public:
-    StudentMenu() {
+    StudentMenu();
 
-    };
-
-    string getStudentMenu() {
-        cout << "Student Menu: " << endl;
-        return studentMenuChoices[getStudentMenuSize()];
-    }
-
-    int getStudentMenuSize() {
-
-        return x;
-    }
+    string *getStudentMenu();
+    int getStudentMenuSize();
+    void initializeMenu();
 
 
 };
+
+#endif // !_STUDENT_MENU
 
