@@ -1,23 +1,23 @@
-#include "Main.h"
+// Menu is the parent class to all types of menu used.  It will generate the menu and provide the top and bottom bar.
+
 #include "Menu.h"
 
-using namespace std;
+// createsMenu() - accepts menuChoices an array of menu items from each menu type, then prints out the menu and returns to caller void.
+Menu::Menu() {
 
+	const string menuTopBottomBars[2] = { "**********************************", "**********************************" };
+	 
+}
 
-// creates Menus - accepts menuChoices - array of menu items from each menu type, then prints out the menu and returns to caller void.
 
 void Menu::createMenu(string* menuChoices, int size) {
 
 		Menu newMenu;
-
 		cout << newMenu.menuTopBottomBars[0] << endl; // top bar of menu
-
-
 
 		for (int i = 0; i < size; i++) {
 			cout << menuChoices[i] << endl;
 		}
-
 		cout << newMenu.menuTopBottomBars[1] << endl; // bottom menu bar
 
 };

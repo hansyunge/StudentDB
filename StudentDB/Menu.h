@@ -1,21 +1,19 @@
 #ifndef MENU_H
 #define MENU_H
 
-#pragma once
+#include <iostream>
+#include <string>
 
-#include "Main.h"
 using namespace std;
 
 class Menu
 {
 protected:
 
-    string menuTopBottomBars[2] = { "**********************************", "**********************************" };
-    int menuSelection = 0;
-
+    const string menuTopBottomBars[2] = { "**********************************", "**********************************" };
 
 public:
-
+    Menu();
     void createMenu(string *menuChoices, int size);
     int obtainSelection();
     
