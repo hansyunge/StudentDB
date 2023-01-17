@@ -13,12 +13,12 @@ Menu::Menu() {
 void Menu::createMenu(string* menuChoices, int size) {
 
 		Menu newMenu;
-		cout << newMenu.menuTopBottomBars[0] << endl; // top bar of menu
+		cout << endl << newMenu.menuTopBottomBars[0] << endl; // top bar of menu
 
 		for (int i = 0; i < size; i++) {
 			cout << menuChoices[i] << endl;
 		}
-		cout << newMenu.menuTopBottomBars[1] << endl; // bottom menu bar
+		cout << endl << newMenu.menuTopBottomBars[1] << endl; // bottom menu bar
 
 };
 
@@ -28,6 +28,7 @@ void Menu::createMenu(string* menuChoices, int size) {
 
 		cout << "Enter Menu selection :  ";
 		cin >> selection;
+		cout << endl << endl;
 
 		return selection;
 	};

@@ -9,7 +9,7 @@ MainMenu::MainMenu() {
 
 string* MainMenu::getMainMenu() {
 
-    cout << "Main Menu: " << endl;
+    cout << endl << endl << "**********************************" << endl << "Main Menu: ";
     return mainMenuChoices;
 }
 
@@ -24,23 +24,27 @@ void MainMenu::initializeMenu() {
     newMenu.createMenu(newMenu.getMainMenu(), newMenu.getMainMenuSize());
     int selection = newMenu.obtainSelection();
 
-    switch (selection) {
-    case 1:
-    {
+    // selection 1 = student menu
+    if (selection==1) {
         StudentMenu newStudentMenu;
-        newStudentMenu.createMenu(newStudentMenu.getStudentMenu(), newStudentMenu.getStudentMenuSize());
-        int selection = newStudentMenu.obtainSelection();
+        newStudentMenu.initializeStudentMenu();
+        newStudentMenu.studentMenuSelection(selection);
     }
-    case 2:
-    {
+    // selection 2 = school menu
+    if (selection== 2){
         SchoolMenu newSchoolMenu;
-        newSchoolMenu.createMenu(newSchoolMenu.getSchoolMenu(), newSchoolMenu.getSchoolMenuSize());
-        int selection = newSchoolMenu.obtainSelection();
+        newSchoolMenu.initializeSchoolMenu();
+        newSchoolMenu.schoolMenuSelection(selection);
     }
-    case 3:
-    {
-        cout << endl << "Program terminated.  Exiting school database." << endl;
+    // exit
+    if (selection == 3){
+        cout << endl << "Program terminated.  Exiting school database." << endl << endl << endl;
         exit(0);
+
+        // invalid entry
+    } else {
+        cout << endl << "Please enter valid selection." << endl;
+        MainMenu newMenu;
+        newMenu.initializeMenu();
     }
     }
-}

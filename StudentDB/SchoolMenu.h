@@ -23,7 +23,9 @@ public:
 
     int getSchoolMenuSize();
 
-    void initializeMenu();
+    void initializeSchoolMenu();
+
+    int schoolMenuSelection(int selection);
 
 };
 

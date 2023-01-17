@@ -2,6 +2,8 @@
 #define _STUDENT_MENU
 
 #include "Menu.h"
+#include "Main.h"
+#include "Database.h"
 
 using namespace std;
 
@@ -14,15 +16,30 @@ private:
                                         " 4) Delete Student",
                                         " 5) Main Menu",};
 
+    string studentHeader[12] = { "First Name: ", 
+                                 "Last Name: ", 
+                                 "Date of Birth: ", 
+                                 "Address: ", 
+                                 "Address: ", 
+                                 "City: ",
+                                 "State: ",
+                                 "Country: ", 
+                                 "Class: ", 
+                                 "Student ID: ",
+                                 "Flag: ",
+                                 "School: "};
+
 
     int x = sizeof(studentMenuChoices) / (sizeof(studentMenuChoices[0]));
 
 public:
     StudentMenu();
-
     string *getStudentMenu();
     int getStudentMenuSize();
-    void initializeMenu();
+    void initializeStudentMenu();
+    int studentMenuSelection(int selection);
+    bool isIDdigit;
+    string *getHeader();
 
 
 };
